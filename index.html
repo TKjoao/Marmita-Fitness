@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras e Modo de Preparo</title>
+    <title>Cardápio e Cronograma de Marmitas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,12 +26,22 @@
         h1, h2 {
             color: #4CAF50;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .cronograma {
+            margin-top: 1.5rem;
         }
-        ul li {
-            margin-bottom: 0.5rem;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
         }
         .button-container {
             text-align: center;
@@ -60,45 +70,116 @@
 </head>
 <body>
     <header>
-        <h1>Lista de Compras e Modo de Preparo</h1>
-        <p>BEM VINDA A LISTA DE COMPRAS KETHLEN TAKAMORI</p>
+        <h1>Cardápio e Cronograma de Marmitas</h1>
+        <p>Bem-vindo ao plano alimentar saudável!</p>
     </header>
 
     <section>
-        <h2>Lista de Compras</h2>
+        <h2>Cardápio</h2>
+        <p>Confira abaixo as porções ajustadas para cada refeição:</p>
         <ul>
-            <li>Peito de frango: 2kg</li>
-            <li>Carne bovina (bife e tiras): 2.5kg</li>
-            <li>Molhos (tomate, madeira, curry, etc.): Conforme necessário</li>
-            <li>Vegetais variados (cenoura, abobrinha, brócolis, couve, etc.): 2kg</li>
-            <li>Purês (batata, mandioquinha, abóbora, etc.): Ingredientes como 1kg de cada vegetal desejado</li>
-            <li>Farinha de mandioca: 500g</li>
-            <li>Temperos (sal, pimenta, alho, cebola, etc.): Quantidade a gosto</li>
-            <li>Azeite: 500ml</li>
+            <li><strong>Almoço:</strong> Proteína magra (100g), carboidrato (70g), vegetais variados (100g).</li>
+            <li><strong>Jantar:</strong> Proteína magra (100g), purê de vegetais (80g), vegetais refogados (100g).</li>
         </ul>
 
-        <h2>Modo de Preparo</h2>
-        <p><strong>Proteínas:</strong></p>
-        <ul>
-            <li><strong>Frango frito:</strong> Tempere o frango com sal e pimenta, frite em óleo quente até dourar.</li>
-            <li><strong>Frango ao molho:</strong> Grelhe o frango, adicione molho de tomate e cozinhe até incorporar.</li>
-            <li><strong>Carne frita:</strong> Tempere a carne com sal e pimenta, frite rapidamente em fogo alto até dourar.</li>
-            <li><strong>Carne ao molho:</strong> Corte a carne em tiras, cozinhe em molho madeira até que fique macia.</li>
-        </ul>
+        <h2>Cronograma da Semana</h2>
+        <div class="cronograma">
+            <h3>Almoço</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Proteína</th>
+                        <th>Carboidrato</th>
+                        <th>Vegetais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>100g Filé de frango grelhado</td>
+                        <td>70g Arroz integral</td>
+                        <td>100g Cenoura refogada</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>100g Carne bovina magra</td>
+                        <td>70g Batata-doce cozida</td>
+                        <td>100g Abobrinha grelhada</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>100g Peito de frango desfiado</td>
+                        <td>70g Quinoa</td>
+                        <td>100g Brócolis cozido</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta-feira</td>
+                        <td>100g Almôndegas de carne magra</td>
+                        <td>70g Arroz integral</td>
+                        <td>100g Beterraba cozida</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>100g Filé de tilápia grelhado</td>
+                        <td>70g Purê de abóbora</td>
+                        <td>100g Couve refogada</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <p><strong>Acompanhamentos:</strong></p>
-        <ul>
-            <li><strong>Purês:</strong> Cozinhe os vegetais, amasse, misture com leite, manteiga, sal e pimenta.</li>
-            <li><strong>Legumes refogados:</strong> Refogue os vegetais com azeite, alho e sal.</li>
-        </ul>
+            <h3>Jantar</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Proteína</th>
+                        <th>Purê</th>
+                        <th>Vegetais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>100g Frango grelhado</td>
+                        <td>80g Purê de batata-doce</td>
+                        <td>100g Salada de folhas verdes</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>100g Almôndegas de carne magra</td>
+                        <td>80g Purê de mandioquinha</td>
+                        <td>100g Vagem salteada</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>100g Frango ao molho</td>
+                        <td>80g Purê de batata</td>
+                        <td>100g Mix de legumes cozidos</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta-feira</td>
+                        <td>100g Filé de tilápia</td>
+                        <td>80g Purê de cenoura</td>
+                        <td>100g Salada de pepino</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>100g Frango desfiado</td>
+                        <td>80g Purê de abóbora</td>
+                        <td>100g Couve-flor assada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="button-container">
-            <a href="index.html">Voltar ao Cardápio</a>
+            <a href="lista_compras.html">Ver Lista de Compras e Modo de Preparo</a>
         </div>
     </section>
 
     <footer>
-        <p>Prepare suas refeições com carinho e aproveite cada momento!</p>
+        <p>Mantenha uma alimentação equilibrada e atinja seus objetivos com saúde!</p>
     </footer>
 </body>
 </html>
