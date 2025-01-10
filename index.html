@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio e Cronograma de Marmitas</title>
+    <title>Lista de Compras e Modo de Preparo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,22 +26,12 @@
         h1, h2 {
             color: #4CAF50;
         }
-        .cronograma {
-            margin-top: 1.5rem;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 0.8rem;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
+        ul li {
+            margin-bottom: 0.5rem;
         }
         .button-container {
             text-align: center;
@@ -70,110 +60,45 @@
 </head>
 <body>
     <header>
-        <h1>Cardápio e Cronograma de Marmitas</h1>
-        <p>BEM VINDA AO CARDÁPIO DE MARMITAS FITNESS</p>
+        <h1>Lista de Compras e Modo de Preparo</h1>
+        <p>BEM VINDA A LISTA DE COMPRAS KETHLEN TAKAMORI</p>
     </header>
 
     <section>
-        <h2>Cardápio</h2>
-        <p>Confira abaixo o que inclui cada refeição:</p>
+        <h2>Lista de Compras</h2>
         <ul>
-            <li><strong>Almoço:</strong> Arroz, feijão, farofa, proteína e acompanhamento.</li>
-            <li><strong>Jantar:</strong> Purê no lugar de arroz e feijão, proteína e acompanhamento leve.</li>
+            <li>Peito de frango: 2kg</li>
+            <li>Carne bovina (bife e tiras): 2.5kg</li>
+            <li>Molhos (tomate, madeira, curry, etc.): Conforme necessário</li>
+            <li>Vegetais variados (cenoura, abobrinha, brócolis, couve, etc.): 2kg</li>
+            <li>Purês (batata, mandioquinha, abóbora, etc.): Ingredientes como 1kg de cada vegetal desejado</li>
+            <li>Farinha de mandioca: 500g</li>
+            <li>Temperos (sal, pimenta, alho, cebola, etc.): Quantidade a gosto</li>
+            <li>Azeite: 500ml</li>
         </ul>
 
-        <h2>Cronograma da Semana</h2>
-        <div class="cronograma">
-            <h3>Almoço</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Proteína</th>
-                        <th>Acompanhamento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>Frango frito</td>
-                        <td>Cenoura refogada</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira</td>
-                        <td>Carne frita</td>
-                        <td>Abobrinha grelhada</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta-feira</td>
-                        <td>Frango com molho em blocos</td>
-                        <td>Couve refogada</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-feira</td>
-                        <td>Carne em tiras ao molho</td>
-                        <td>Beterraba cozida</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-feira</td>
-                        <td>Frango frito</td>
-                        <td>Brócolis no vapor</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>Modo de Preparo</h2>
+        <p><strong>Proteínas:</strong></p>
+        <ul>
+            <li><strong>Frango frito:</strong> Tempere o frango com sal e pimenta, frite em óleo quente até dourar.</li>
+            <li><strong>Frango ao molho:</strong> Grelhe o frango, adicione molho de tomate e cozinhe até incorporar.</li>
+            <li><strong>Carne frita:</strong> Tempere a carne com sal e pimenta, frite rapidamente em fogo alto até dourar.</li>
+            <li><strong>Carne ao molho:</strong> Corte a carne em tiras, cozinhe em molho madeira até que fique macia.</li>
+        </ul>
 
-            <h3>Jantar</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Proteína</th>
-                        <th>Puré</th>
-                        <th>Acompanhamento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>Frango ao molho de mostarda e mel</td>
-                        <td>Purê de batata-doce</td>
-                        <td>Mix de folhas verdes</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira</td>
-                        <td>Almôndegas de carne</td>
-                        <td>Purê de mandioquinha</td>
-                        <td>Vagem salteada</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta-feira</td>
-                        <td>Frango frito</td>
-                        <td>Purê de batata</td>
-                        <td>Legumes cozidos</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-feira</td>
-                        <td>Carne com molho madeira</td>
-                        <td>Purê de cenoura</td>
-                        <td>Salada de pepino</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-feira</td>
-                        <td>Frango com molho em blocos</td>
-                        <td>Purê de abóbora</td>
-                        <td>Couve-flor assada</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <p><strong>Acompanhamentos:</strong></p>
+        <ul>
+            <li><strong>Purês:</strong> Cozinhe os vegetais, amasse, misture com leite, manteiga, sal e pimenta.</li>
+            <li><strong>Legumes refogados:</strong> Refogue os vegetais com azeite, alho e sal.</li>
+        </ul>
 
         <div class="button-container">
-            <a href="lista_compras.html">Ver Lista de Compras e Modo de Preparo</a>
+            <a href="index.html">Voltar ao Cardápio</a>
         </div>
     </section>
 
     <footer>
-        <p>Planeje suas refeições e tenha uma alimentação saudável e variada!</p>
+        <p>Prepare suas refeições com carinho e aproveite cada momento!</p>
     </footer>
 </body>
 </html>
