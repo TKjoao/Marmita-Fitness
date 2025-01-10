@@ -21,10 +21,10 @@ Este repositório contém dois arquivos principais que formam um sistema simples
 
 1. Faça o download ou clone este repositório:
     ```bash
-    git clone https://github.com/seu-usuario/nome-repositorio.git
+    git clone https://github.com/TKjoao/Marmita-Fitness.git
     ```
 
-2. Abra o arquivo `landing_page_cardapio_marmitas.html` em seu navegador para acessar a página inicial do sistema.
+2. Abra o arquivo `index.html` em seu navegador para acessar a página inicial do sistema.
 
 3. Navegue pelo cardápio e cronograma para visualizar as refeições planejadas.
 
@@ -33,7 +33,7 @@ Este repositório contém dois arquivos principais que formam um sistema simples
 ## Estrutura do Projeto
 
 ```
-|-- landing_page_cardapio_marmitas.html
+|-- inex.html
 |-- lista_compras_marmitas.html
 ```
 
